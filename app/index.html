@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact Form 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Airdrop Manager</h2>
+					<button id="btn-login" class="btn btn-primary">Login to Metamask</button>
+					<button id="btn-logout" class="btn btn-primary">Logout</button>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+									<h3 class="mb-4 text-center">Airdrop Meta Data</h3>
+									<h3 class="mb-4 text-center">Smart Contract Airdrop Address</h3><br>
+									<h3 class="mb-4 text-center"></hh3><input type="text" class="form-control" id="airdropAddress" name="aidropAddress" placeholder="0x6739df8..." size="40"></h3><br>
+									<h3 class="mb-4 text-center">ERC20 Token Address</h3><br>
+									<h3 class="mb-4 text-center"><input type="text" class="form-control" id="tokenAddress" name="tokenAddress" placeholder="0x6739df8..." size="40"></h3><br>
+
+									<h3 class="mb-4 text-center">Whitelist</h3>
+
+									<h3 class="mb-4 text-center"><button id="btn-showWhitelist" class="btn btn-primary">Show if you are whitrelisted or not</button></h3>
+									<div id="form-message-whitelisted" class="mb-4 w-100 text-center">#IsWhitelisted</div> 
+									<h3 class="mb-4 text-center">Price: Fixed at 0.03ETH (0 if you are whitelisted)</h3>
+									<h3 class="mb-4 text-center">Airdrop Data</h3>
+
+									<br>
+									Address list separeted by comma:
+									<br>
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea name="addresses" class="form-control" id="addresses" cols="30" rows="8" placeholder="Addresses"></textarea>
+										</div>
+									</div>
+									<br>
+									Value list separaeted by comma
+									<br>
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea name="values" class="form-control" id="values" cols="30" rows="8" placeholder="Values"></textarea>
+										</div>
+									</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<button id="btn-airdrop" class="btn btn-primary">Run Airdrop</button>
+											</div>
+										</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+	</body>
+</html>
+
